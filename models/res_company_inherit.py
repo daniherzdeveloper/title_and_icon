@@ -1,8 +1,4 @@
-import base64
-import io
-import os
-from odoo import models, api, fields, tools
-from PIL import Image
+from odoo import models, api, fields
 
 class Company(models.Model):
     _inherit = 'res.company'
