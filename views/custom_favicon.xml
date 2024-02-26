@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="custom_favicon" inherit_id="web.layout" name="Web layout">
+            <xpath expr="//link[@rel='shortcut icon']" position="after">
+                <t t-set="company_id" t-value="request.env.user.company_id.id"/>
+                <link rel="shortcut icon" type="image/x-icon" t-attf-href="/web/binary/company_favicon/#{company_id}"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>
