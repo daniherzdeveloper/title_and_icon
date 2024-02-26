@@ -12,7 +12,7 @@
     ],
     'assets' : {
         'web.assets_backend': [
-            'custom_title/static/src/**/*',
+            'title_and_icon/static/src/**/*',
         ],
     }
 }
